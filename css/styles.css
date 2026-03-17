@@ -21,15 +21,21 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     text-align: center;
 }
+.hero-espacio h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #e9eaf5;
+    text-shadow: 0 0 10px #000, 0 0 20px #50598b;
+    margin-bottom: 20px;
+}
 
 
-.hero-espacio h1, 
 .hero-espacio-equipos h2, 
 .hero-espacio-eventos h2, 
 .hero-espacio-registro h2,
 #inicio h2 {
     font-weight: bold;
-    font-size: 38px;
+    font-size: 28px;
     color: #e9eaf5;
     text-shadow: 0 0 10px #000, 0 0 20px #191f42;
     margin-bottom: 20px;
@@ -39,8 +45,27 @@ body {
     text-align: center;
 }
 
-.hero-espacio .texto-secundario,
+
 .hero-espacio .texto-principal {
+    font-size: 24px; 
+    text-align: left;
+    margin-bottom: 25px;
+    color: #e9eaf5;
+    text-shadow: 0 0 10px #000;
+    max-width: 700px;
+}
+
+
+.hero-espacio .texto-principal2 {
+    font-size: 16px; 
+    text-align: left;
+    margin-bottom: 25px;
+    color: #e9eaf5;
+    text-shadow: 0 0 10px #000;
+    max-width: 700px;
+}
+
+.hero-espacio .texto-secundario {
     font-size: 18px; 
     text-align: left;
     margin-bottom: 25px;
@@ -50,12 +75,14 @@ body {
 }
 
 .hero-espacio {
-    padding-top: 140px;
+    padding-top: 80px;
     padding-bottom: 80px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 60%, #272952 100%), url("../images/principal.png");
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
+
 
 .equipos, .eventos {
     box-shadow: 0 -20px 40px rgba(0,0,0,0.6);
@@ -124,29 +151,29 @@ footer {
 
 
 body {
-    /* Degradado de morado oscuro a casi negro */
+  
     background: radial-gradient(circle at top, #1a103c, #070510);
-    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    background-attachment: fixed; 
     color: #e2e8f0;
     padding-top: 80px; 
 }
 
-/* Modificamos la barra de navegación para que combine con el espacio */
+
 .navbar.bg-dark {
     background-color: #0b071a !important;
     border-bottom: 1px solid #3d2b6e !important;
 }
 
-/* Tarjeta principal del formulario con fondo oscuro */
+
 .polaris-card {
-    background-color: rgba(17, 12, 34, 0.95) !important; /* Morado/azul casi negro */
-    border: 1px solid #3d2b6e !important; /* Borde morado */
-    border-radius: 15px; /* Una curva suave y elegante */
+    background-color: rgba(17, 12, 34, 0.95) !important; 
+    border: 1px solid #3d2b6e !important; 
+    border-radius: 15px; 
     box-shadow: 0 10px 30px rgba(109, 40, 217, 0.3);
     color: #e2e8f0 !important; 
 }
 
-/* Forzar que todos los textos dentro de la tarjeta sean claros */
+
 .polaris-card h2, 
 .polaris-card p, 
 .polaris-card label, 
@@ -154,14 +181,14 @@ body {
     color: #e2e8f0 !important;
 }
 
-/* Campos de entrada de texto y selectores oscuros */
+
 .form-control, .form-select {
-    background-color: #1e153a !important; /* Fondo interno morado oscuro */
+    background-color: #1e153a !important; 
     border: 1px solid #4a3680 !important;
     color: #f3f4f6 !important;
 }
 
-/* Efecto al escribir en los campos */
+
 .form-control:focus, .form-select:focus {
     background-color: #251a47 !important;
     color: #ffffff !important;
@@ -169,7 +196,38 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.3) !important;
 }
 
-/* Color del texto de relleno (placeholder) */
+
 .form-control::placeholder {
     color: #8b80b0 !important;
+}
+
+.texto-brillante {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 30px rgba(76, 29, 149, 0.6);
+    line-height: 1.2;
+}
+
+
+.tracking-wide {
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    border: 1px solid rgba(139, 92, 246, 0.5);
+}
+
+
+.bg-polaris {
+    background: linear-gradient(45deg, #1a103c, #4c1d95);
+}
+
+.glass-card {
+    background: rgba(17, 12, 34, 0.3); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(76, 29, 149, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
