@@ -1,23 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotman', sans-serif; 
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
+    background: radial-gradient(circle at top, #1a103c, #070510);
+    background-attachment: fixed; 
+    color: #e2e8f0;
+    line-height: 1.6;
 }
 
-header {
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+.hero-espacio h1, 
+.hero-espacio-equipos h2, 
+.hero-espacio-eventos h2, 
+.hero-espacio-registro h2,
+#inicio h2 {
+    font-weight: bold;
+    font-size: 38px;
+    color: #e9eaf5;
+    text-shadow: 0 0 10px #000, 0 0 20px #191f42;
     margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.hero-espacio-registro h2 {
+    text-align: center;
 }
 
-nav li {
-    display: inline;
-    margin-right: 15px;
+.hero-espacio .texto-secundario,
+.hero-espacio .texto-principal {
+    font-size: 18px; 
+    text-align: left;
+    margin-bottom: 25px;
+    color: #e9eaf5;
+    text-shadow: 0 0 10px #000;
+    max-width: 700px;
+}
+
+.hero-espacio {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 60%, #272952 100%), url("../images/principal.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.equipos, .eventos {
+    box-shadow: 0 -20px 40px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 60%, #272952 100%), url("../images/estrellas.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.registro {
+    box-shadow: 0 -20px 40px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 60%, #272952 100%), url("../images/inicio.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card {
+    background-color: rgba(17, 12, 34, 0.95) !important; 
+    border: 1px solid #3d2b6e !important; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(109, 40, 217, 0.3);
+    color: #e2e8f0 !important; 
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+
+.btn-polaris {
+    background: linear-gradient(45deg, #1a103c, #4c1d95); 
+    color: white !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-polaris:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.6);
+    text-decoration: none;
 }
 
 footer {
-    margin-top: 40px;
-    font-size: 14px;
+    box-shadow: 0 -20px 40px rgba(0,0,0,0.6);
+    font-size: 16px;
+    background: radial-gradient(circle at top, #1a103c, #070510);
+    padding: 60px 0 30px 0;
+}
+
+
+body {
+    /* Degradado de morado oscuro a casi negro */
+    background: radial-gradient(circle at top, #1a103c, #070510);
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    color: #e2e8f0;
+    padding-top: 80px; 
+}
+
+/* Modificamos la barra de navegación para que combine con el espacio */
+.navbar.bg-dark {
+    background-color: #0b071a !important;
+    border-bottom: 1px solid #3d2b6e !important;
+}
+
+/* Tarjeta principal del formulario con fondo oscuro */
+.polaris-card {
+    background-color: rgba(17, 12, 34, 0.95) !important; /* Morado/azul casi negro */
+    border: 1px solid #3d2b6e !important; /* Borde morado */
+    border-radius: 15px; /* Una curva suave y elegante */
+    box-shadow: 0 10px 30px rgba(109, 40, 217, 0.3);
+    color: #e2e8f0 !important; 
+}
+
+/* Forzar que todos los textos dentro de la tarjeta sean claros */
+.polaris-card h2, 
+.polaris-card p, 
+.polaris-card label, 
+.form-check-label {
+    color: #e2e8f0 !important;
+}
+
+/* Campos de entrada de texto y selectores oscuros */
+.form-control, .form-select {
+    background-color: #1e153a !important; /* Fondo interno morado oscuro */
+    border: 1px solid #4a3680 !important;
+    color: #f3f4f6 !important;
+}
+
+/* Efecto al escribir en los campos */
+.form-control:focus, .form-select:focus {
+    background-color: #251a47 !important;
+    color: #ffffff !important;
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Color del texto de relleno (placeholder) */
+.form-control::placeholder {
+    color: #8b80b0 !important;
 }
